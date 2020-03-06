@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs') %>
+</head>
+<body>
+    <%- include('../partials/navigation.ejs') %>
+
+    <main>
+        <form class="myform-container" action="/login" method="POST" novalidate>
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" class="form-control" id="email">
+            </div>
+            <div >
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" id="password">
+            </div>
+            <!-- <input type="hidden" name="_csrf" value="<%= //csrfToken %>"> -->
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary mt-3" type="submit">Login</button>
+            </div>
+        </form>
+    </main>
+    <%- include('../partials/footer.ejs') %>

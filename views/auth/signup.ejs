@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs') %>
+</head>
+<body>
+    <%- include('../partials/navigation.ejs') %>
+
+    <div class="myform-container">
+        <form class="login-form" action="/signup" method="POST">
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" class="form-control" id="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" id="password">
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword">
+            </div>
+            <!-- <input type="hidden" name="_csrf" value="<%= //csrfToken %>"> -->
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary mt-3" type="submit">Signup</button>
+            </div>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs') %>

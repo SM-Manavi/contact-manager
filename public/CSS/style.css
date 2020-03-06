@@ -1,0 +1,43 @@
+body {
+    background-image: url(../pic/background.jpg);	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.myform-container{
+	padding:10px;
+	padding-bottom:25px;
+	margin:0 auto;
+	margin-top:20px;
+	width:50%;
+	border-radius:20px;
+	background-color: #ececec;
+  }
+  
+  .add-one{
+	text-align:center;
+  }
+  
+  .delete{
+	/* color:white; */
+	text-align:center;
+	/* margin-top:6px;
+	font-weight:700;
+	border-radius:5px;
+	min-width:20px; */
+	cursor:pointer;
+  }
+
+  .form-field-width {
+	  width: 35%;
+  }
+  
+  .title{
+	text-align:center;
+	font-size:40px;
+	margin-bottom:40px;
+  }
+  
+  .dynamic-element{
+	margin-bottom:0px;
+  }
